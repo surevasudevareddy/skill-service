@@ -12,6 +12,6 @@ public interface SkillService {
     public List<Skill> getSkillsByUserId(Long id);
 
     public Optional<Skill> getSkillById(Long id);
-    public void saveSkill(Skill skill);
+    public Skill saveSkill(Skill skill);
     public void deleteSkill(Long id);
 }

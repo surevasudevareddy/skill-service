@@ -29,8 +29,8 @@ public class SkillController {
         return skillService.getAllSkills();
     }
     @PostMapping(value = "/saveSkill")
-    public void saveSkill(@RequestBody Skill userSkill){
-        skillService.saveSkill(userSkill);
+    public Skill saveSkill(@RequestBody Skill userSkill){
+        return skillService.saveSkill(userSkill);
     }
     @DeleteMapping(value = "/delete/{id}")
     public void deleteSkill(@PathVariable Long id){
