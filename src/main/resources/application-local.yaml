@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: skill-service
+  datasource:
+    initialization-mode: always
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    username: postgres
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+  devtools:
+    add-properties: true
+logging:
+  level:
+    web: DEBUG
+
+
+server:
+  port: 8082
+
+
